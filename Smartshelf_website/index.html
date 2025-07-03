@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartShelf | AI-Powered Restaurant Management</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-blue-900">Smart<span class="text-blue-500">Shelf</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#problem" class="text-gray-700 hover:text-blue-500 transition">The Problem</a>
+                    <a href="#solution" class="text-gray-700 hover:text-blue-500 transition">Our Solution</a>
+                    <a href="#features" class="text-gray-700 hover:text-blue-500 transition">Features</a>
+                    <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md transition">Get Started</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-500 hover:text-blue-500 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white pt-20 pb-16" id="home">
+        <div class="container mx-auto px-6 py-12 md:py-20 flex flex-col-reverse md:flex-row items-center">
+            <div class="md:w-1/2 mt-10 md:mt-0 text-center md:text-left">
+                <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">Smarter Inventory, Higher Profits</h1>
+                <p class="text-lg md:text-xl mb-4">SmartShelf's AI predicts exactly what your business needs, reducing waste by 85% and boosting profits by 24%.</p>
+                <h2 class="text-xl font-semibold mb-2">Predict. Prepare. Profit.</h2>
+                <p class="mb-6">Eliminate stockouts, cut food waste, and streamline operations with AI-driven inventory management.</p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-white text-blue-800 hover:bg-gray-100 font-semibold py-3 px-6 rounded-md transition">Request Demo</a>
+                    <a href="#demo" class="border border-white text-white hover:bg-white hover:text-blue-800 font-semibold py-3 px-6 rounded-md transition">See Features</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="images/Photo%201.jpg" alt="SmartShelf AI Dashboard" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+
+        <!-- Centered Scroll Indicator -->
+        <div class="flex justify-center mt-12" id="scrollIndicator">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Retail BlindSpot -->
+    <section id="problem">
+        <div class="section-title">
+            <h2>The Retail Blindspot</h2>
+        </div>
+        
+        <div class="problem-box">
+            <h3>Retailers lose $1.75 trillion annually to inventory distortion</h3>
+            <p>Out-of-stock items cost retailers 4.1% in lost sales while overstocking ties up capital and leads to costly markdowns and waste.</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <h3>43%</h3>
+                <p>of shoppers will go to a competitor when faced with an out-of-stock item</p>
+            </div>
+            <div class="stat-item">
+                <h3>25%</h3>
+                <p>of inventory costs are wasted due to inaccurate demand forecasting</p>
+            </div>
+            <div class="stat-item">
+                <h3>8.5hr</h3>
+                <p>weekly time spent by staff on manual inventory counts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">The Restaurant Challenge</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Restaurants face unpredictable demand, leading to inefficient staffing, excessive wait times, and wasted inventory.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="md:w-1/2">
+                    <img src="images/Photo%202.jpg" alt="SmartShelf AI Dashboard" class="rounded-lg shadow-lg">
+                </div>
+                
+                <div>
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-semibold mb-4">Unpredictable Customer Flow</h3>
+                        <p class="text-gray-600">Restaurants struggle to predict busy periods, leading to staffing issues and long wait times that frustrate customers.</p>
+                    </div>
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-semibold mb-4">Inventory Management Challenges</h3>
+                        <p class="text-gray-600">Without accurate demand forecasting, restaurants over-purchase ingredients, leading to waste and increased costs.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Inefficient Resource Allocation</h3>
+                        <p class="text-gray-600">Balancing staff, kitchen resources, and table availability becomes a guessing game rather than a data-driven decision.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Solution -->
+    <section id="solution">
+        <div class="section-title">
+            <h2>Our Solution</h2>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>AI Forecasting</h3>
+                <p>Our proprietary algorithm Accurately predict daily sales and inventory needs, reducing waste and ensuring just-in-time preparation.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>Predictive Intelligence</h3>
+                <p>SmartShelf learns from historical data, seasonal trends, and even real-time weather patterns to predict demand surges before they happen.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Seamless Integration</h3>
+                <p>Connect effortlessly with your ERP, POS, and supply chain systems—setup takes hours, not weeks.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Staff Optimization</h3>
+                <p>Intelligently schedule your staff based on predicted sales volumes, ensuring you're never over or understaffed.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="section-title">
+            <h2>Why Choose SmartShelf?</h2>
+            <p>Revolutionize your retail or restaurant operations with AI-powered efficiency, cost savings, and real-time insights.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Cost Reduction</h3>
+                <p>Cut inventory costs by up to 25% through optimized purchasing and waste elimination.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌱</div>
+                <h3>Sustainable & Eco-Friendly</h3>
+                <p>Reduce your environmental footprint while appealing to eco-conscious customers.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>Revenue Growth</h3>
+                <p>Boost sales by up to 32% with improved product availability and data-driven merchandising.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⏱️</div>
+                <h3>Time & Labor Efficiency</h3>
+                <p>Eliminate 94% of manual inventory counts and speed up prep time with AI-powered accuracy.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Real-Time Alerts</h3>
+                <p>Get instant notifications for stockouts, planogram issues, and theft risks—ensuring quick corrective action.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔐</div>
+                <h3>Secure & Reliable</h3>
+                <p>Operate in a protected environment with data privacy and secure system integration.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="cta" id="contact">
+        <div class="container mx-auto px-6 py-16 text-center">
+            <h2>Ready for Intelligent Inventory?</h2>
+            <p>Join leading restaurants and retailers using SmartShelf's AI to cut costs, reduce waste, and optimize operations with precision.</p>
+          
+            <div class="contact-form">
+                <input 
+                    id="email" 
+                    type="email" 
+                    placeholder="Enter your business email" 
+                    required 
+                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800"
+                    style="min-height: 50px; color: #333;"
+                >
+                
+                <button 
+                    id="demo-button" 
+                    type="submit" 
+                    class="btn w-full bg-blue-500 text-white font-medium py-3 px-6 rounded-md transition hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed mt-3"
+                    disabled
+                >
+                    Schedule a Demo
+                </button>
+                
+                <!-- Error message below button with fixed height -->
+                <div style="height: 24px; text-align: left;">
+                    <p id="email-error" class="text-red-500 text-sm opacity-0">Please enter a valid email address</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Modal -->
+        <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-lg p-8 max-w-md mx-4 shadow-xl">
+                <div class="text-center">
+                    <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100 mb-4">
+                        <svg class="h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Demo Request Submitted!</h3>
+                    <p class="text-gray-600 mb-6">Thank you for your interest in SmartShelf. Our team will contact you within 24 hours to schedule your personalized demo.</p>
+                    <button id="close-modal" class="w-full bg-blue-500 text-white font-medium py-2 px-4 rounded-md transition hover:bg-blue-600">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Smart<span>Shelf</span></div>
+
+            <div class="footer-links">
+                <a href="#problem">The Problem</a>
+                <a href="#solution">Our Solution</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+
+            <div class="contact-info">
+                <p>Address: 123 SmartShelf St, Tech City, Aberdeen, United-Kingdom</p>
+                <p>Email: <a href="mailto:info@smartshelf.com">info@smartshelf.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 234-567-890</a></p>
+            </div>
+
+            <div class="social-media">
+                <a href="#" aria-label="Social Media Link 1">🔹</a>
+                <a href="#" aria-label="Social Media Link 2">🔸</a>
+                <a href="#" aria-label="Social Media Link 3">🔹</a>
+                <a href="#" aria-label="Social Media Link 4">🔸</a>
+            </div>
+
+            <p>&copy; 2025 SmartShelf Technologies. All rights reserved.</p>
+            <p><small>Website by <a href="https://github.com/Happinesslazarus" target="_blank">Happiness Lazarus</a></small></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartShelf | AI-Powered Restaurant Management</title>
+    <!-- External Tailwind CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS - Fixed path to match file structure -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-sans antialiased text-gray-800">
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav class="bg-white shadow-md fixed w-full z-10">
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
+                <!-- Logo -->
                 <div class="flex items-center">
                     <span class="text-2xl font-bold text-blue-900">Smart<span class="text-blue-500">Shelf</span></span>
                 </div>
+                
+                <!-- Desktop Navigation Links -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#problem" class="text-gray-700 hover:text-blue-500 transition">The Problem</a>
                     <a href="#solution" class="text-gray-700 hover:text-blue-500 transition">Our Solution</a>
                     <a href="#features" class="text-gray-700 hover:text-blue-500 transition">Features</a>
                     <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md transition">Get Started</a>
                 </div>
+                
+                <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
                     <button class="text-gray-500 hover:text-blue-500 focus:outline-none">
                         <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -35,22 +42,27 @@
     <!-- Hero Section -->
     <section class="hero-gradient text-white pt-20 pb-16" id="home">
         <div class="container mx-auto px-6 py-12 md:py-20 flex flex-col-reverse md:flex-row items-center">
+            <!-- Hero Content -->
             <div class="md:w-1/2 mt-10 md:mt-0 text-center md:text-left">
                 <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">Smarter Inventory, Higher Profits</h1>
                 <p class="text-lg md:text-xl mb-4">SmartShelf's AI predicts exactly what your business needs, reducing waste by 85% and boosting profits by 24%.</p>
                 <h2 class="text-xl font-semibold mb-2">Predict. Prepare. Profit.</h2>
                 <p class="mb-6">Eliminate stockouts, cut food waste, and streamline operations with AI-driven inventory management.</p>
+                
+                <!-- Call to Action Buttons -->
                 <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                     <a href="#contact" class="bg-white text-blue-800 hover:bg-gray-100 font-semibold py-3 px-6 rounded-md transition">Request Demo</a>
                     <a href="#demo" class="border border-white text-white hover:bg-white hover:text-blue-800 font-semibold py-3 px-6 rounded-md transition">See Features</a>
                 </div>
             </div>
+            
+            <!-- Hero Image - Fixed path -->
             <div class="md:w-1/2">
-                <img src="images/Photo%201.jpg" alt="SmartShelf AI Dashboard" class="rounded-lg shadow-lg">
+                <img src="images/Photo 1.jpg" alt="SmartShelf AI Dashboard" class="rounded-lg shadow-lg">
             </div>
         </div>
 
-        <!-- Centered Scroll Indicator -->
+        <!-- Scroll Indicator -->
         <div class="flex justify-center mt-12" id="scrollIndicator">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 5v14M5 12l7 7 7-7"/>
@@ -58,17 +70,19 @@
         </div>
     </section>
 
-    <!-- Retail BlindSpot -->
+    <!-- Problem Section: Retail Blindspot -->
     <section id="problem">
         <div class="section-title">
             <h2>The Retail Blindspot</h2>
         </div>
         
+        <!-- Problem Statement -->
         <div class="problem-box">
             <h3>Retailers lose $1.75 trillion annually to inventory distortion</h3>
             <p>Out-of-stock items cost retailers 4.1% in lost sales while overstocking ties up capital and leads to costly markdowns and waste.</p>
         </div>
         
+        <!-- Statistics -->
         <div class="stats">
             <div class="stat-item">
                 <h3>43%</h3>
@@ -85,18 +99,21 @@
         </div>
     </section>
 
-    <!-- Problem Section -->
-    <section id="problem" class="py-16 bg-white">
+    <!-- Restaurant Challenge Section -->
+    <section id="restaurant-challenge" class="py-16 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">The Restaurant Challenge</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">Restaurants face unpredictable demand, leading to inefficient staffing, excessive wait times, and wasted inventory.</p>
             </div>
+            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Challenge Image - Fixed path -->
                 <div class="md:w-1/2">
-                    <img src="images/Photo%202.jpg" alt="SmartShelf AI Dashboard" class="rounded-lg shadow-lg">
+                    <img src="images/Photo 2.jpg" alt="Restaurant Kitchen Management" class="rounded-lg shadow-lg">
                 </div>
                 
+                <!-- Challenge Points -->
                 <div>
                     <div class="mb-8">
                         <h3 class="text-2xl font-semibold mb-4">Unpredictable Customer Flow</h3>
@@ -115,17 +132,18 @@
         </div>
     </section>
 
-    <!-- Our Solution -->
+    <!-- Solution Section -->
     <section id="solution">
         <div class="section-title">
             <h2>Our Solution</h2>
         </div>
         
+        <!-- Solution Features -->
         <div class="features">
             <div class="feature-card">
                 <div class="feature-icon">📊</div>
                 <h3>AI Forecasting</h3>
-                <p>Our proprietary algorithm Accurately predict daily sales and inventory needs, reducing waste and ensuring just-in-time preparation.</p>
+                <p>Our proprietary algorithm accurately predicts daily sales and inventory needs, reducing waste and ensuring just-in-time preparation.</p>
             </div>
 
             <div class="feature-card">
@@ -139,6 +157,7 @@
                 <h3>Seamless Integration</h3>
                 <p>Connect effortlessly with your ERP, POS, and supply chain systems—setup takes hours, not weeks.</p>
             </div>
+            
             <div class="feature-card">
                 <div class="feature-icon">👥</div>
                 <h3>Staff Optimization</h3>
@@ -154,32 +173,38 @@
             <p>Revolutionize your retail or restaurant operations with AI-powered efficiency, cost savings, and real-time insights.</p>
         </div>
 
+        <!-- Feature Grid -->
         <div class="features">
             <div class="feature-card">
                 <div class="feature-icon">💰</div>
                 <h3>Cost Reduction</h3>
                 <p>Cut inventory costs by up to 25% through optimized purchasing and waste elimination.</p>
             </div>
+            
             <div class="feature-card">
                 <div class="feature-icon">🌱</div>
                 <h3>Sustainable & Eco-Friendly</h3>
                 <p>Reduce your environmental footprint while appealing to eco-conscious customers.</p>
             </div>
+            
             <div class="feature-card">
                 <div class="feature-icon">📈</div>
                 <h3>Revenue Growth</h3>
                 <p>Boost sales by up to 32% with improved product availability and data-driven merchandising.</p>
             </div>
+            
             <div class="feature-card">
                 <div class="feature-icon">⏱️</div>
                 <h3>Time & Labor Efficiency</h3>
                 <p>Eliminate 94% of manual inventory counts and speed up prep time with AI-powered accuracy.</p>
             </div>
+            
             <div class="feature-card">
                 <div class="feature-icon">⚡</div>
                 <h3>Real-Time Alerts</h3>
                 <p>Get instant notifications for stockouts, planogram issues, and theft risks—ensuring quick corrective action.</p>
             </div>
+            
             <div class="feature-card">
                 <div class="feature-icon">🔐</div>
                 <h3>Secure & Reliable</h3>
@@ -188,12 +213,13 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact/CTA Section -->
     <section class="cta" id="contact">
         <div class="container mx-auto px-6 py-16 text-center">
             <h2>Ready for Intelligent Inventory?</h2>
             <p>Join leading restaurants and retailers using SmartShelf's AI to cut costs, reduce waste, and optimize operations with precision.</p>
           
+            <!-- Contact Form -->
             <div class="contact-form">
                 <input 
                     id="email" 
@@ -213,7 +239,7 @@
                     Schedule a Demo
                 </button>
                 
-                <!-- Error message below button with fixed height -->
+                <!-- Error message container -->
                 <div style="height: 24px; text-align: left;">
                     <p id="email-error" class="text-red-500 text-sm opacity-0">Please enter a valid email address</p>
                 </div>
@@ -224,6 +250,7 @@
         <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
             <div class="bg-white rounded-lg p-8 max-w-md mx-4 shadow-xl">
                 <div class="text-center">
+                    <!-- Success Icon -->
                     <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100 mb-4">
                         <svg class="h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -242,8 +269,10 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
+            <!-- Footer Logo -->
             <div class="logo">Smart<span>Shelf</span></div>
 
+            <!-- Footer Navigation -->
             <div class="footer-links">
                 <a href="#problem">The Problem</a>
                 <a href="#solution">Our Solution</a>
@@ -253,12 +282,14 @@
                 <a href="#">Terms of Service</a>
             </div>
 
+            <!-- Contact Information -->
             <div class="contact-info">
                 <p>Address: 123 SmartShelf St, Tech City, Aberdeen, United-Kingdom</p>
                 <p>Email: <a href="mailto:info@smartshelf.com">info@smartshelf.com</a></p>
                 <p>Phone: <a href="tel:+1234567890">+1 234-567-890</a></p>
             </div>
 
+            <!-- Social Media Links -->
             <div class="social-media">
                 <a href="#" aria-label="Social Media Link 1">🔹</a>
                 <a href="#" aria-label="Social Media Link 2">🔸</a>
@@ -266,11 +297,13 @@
                 <a href="#" aria-label="Social Media Link 4">🔸</a>
             </div>
 
+            <!-- Copyright -->
             <p>&copy; 2025 SmartShelf Technologies. All rights reserved.</p>
             <p><small>Website by <a href="https://github.com/Happinesslazarus" target="_blank">Happiness Lazarus</a></small></p>
         </div>
     </footer>
 
+    <!-- JavaScript - Fixed path to match file structure -->
     <script src="script.js"></script>
 </body>
 </html>
